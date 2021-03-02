@@ -7,7 +7,7 @@ import Slide from "@material-ui/core/Slide";
 export default function Socials() {
   return (
     <>
-      <aside id="socials">
+      <aside id="contactVia">
         <Slide in={true} direction="right" timeout={1000}>
           <ul>
             <li>
