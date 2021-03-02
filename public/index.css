@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap");
-
 /* font-family: 'Roboto', sans-serif; */
 
 /* css reset */
@@ -24,7 +23,6 @@ body {
   height: 100vh;
   width: 100vw;
   overflow-x: hidden;
-  /* border: 2px solid red; */
 }
 
 a {
@@ -41,7 +39,7 @@ a {
 
 h1.heading {
   margin-bottom: 30px;
-  /* border: 2px solid red; */
+
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -127,8 +125,8 @@ li > a:hover {
   color: var(--primary-txt);
 }
 
-/* ------------------------- socials sideBar section ------------------------ */
-aside#socials {
+/* ------------------------- contactVia sideBar section ------------------------ */
+aside#contactVia {
   max-width: 5%;
   width: 5%;
   padding: 10px;
@@ -138,7 +136,7 @@ aside#socials {
   left: 0;
 }
 
-#socials ul {
+#contactVia ul {
   position: absolute;
   bottom: 10px;
   width: 100%;
@@ -147,14 +145,14 @@ aside#socials {
   align-items: center;
   flex-direction: column;
 }
-#socials ul::after {
+#contactVia ul::after {
   content: "";
   display: block;
   height: 100px;
   width: 2px;
   background-color: var(--secondary-txt);
 }
-#socials li {
+#contactVia li {
   padding: 10px;
   list-style: none;
 }
@@ -169,18 +167,16 @@ main {
   width: 90%;
   max-width: 90%;
   margin: 0 auto;
-  /* overflow: auto; */
-  /* border: 2px solid red; */
 }
 
 /* ------------------------------ home section ------------------------------ */
 #Home {
-  /* border: 2px solid red; */
   display: flex;
   justify-content: center;
   align-items: center;
   height: 90vh;
   width: 100%;
+  overflow: auto;
 }
 
 #introduction {
@@ -219,13 +215,11 @@ h3.title {
   width: 600px;
 }
 /* --------------------------- About page section --------------------------- */
-#About {
-  /* border: 2px solid red; */
+/* #About {
   height: 90vh;
   width: 100%;
 }
 div.content {
-  /* border: 2px solid red; */
   display: flex;
   width: 100%;
   justify-content: center;
@@ -259,24 +253,22 @@ div.content {
   line-height: 1.5;
   letter-spacing: 1px;
   color: var(--secondary-txt);
-}
+} */
 
 /* ----------------------------- skills section ----------------------------- */
-#Skills {
+/* #Skills {
   margin-top: 30px;
-  /* border: 2px solid red; */
 }
 #Skills > h1 {
   margin: 0;
 }
 #Skills > .content {
-  /* border: 2px solid red; */
   justify-content: space-evenly;
 }
 .mern {
   width: 280px;
   height: 120px;
-}
+} */
 
 /* -------------------------- Projects page section ------------------------- */
 #Projects {
@@ -307,7 +299,6 @@ div.content {
   width: 50%;
   height: 100%;
   overflow: hidden;
-  /* border: 2px solid red; */
 }
 .projectImgs {
   width: 100%;
@@ -327,7 +318,6 @@ div.content {
   width: 80%;
   bottom: 10px;
   padding: 5px 10px;
-  /* border: 2px solid red; */
 }
 .projectDesc {
   margin-top: 6px;
@@ -337,7 +327,8 @@ div.content {
 }
 #Projects > .moreProjects {
   /* text-align: right; */
-  margin-top: 30px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 /* -------------------------- contact page section -------------------------- */
 
@@ -389,7 +380,7 @@ textarea {
   height: 90vh;
   width: 80%;
   line-height: 2;
-  /* border:2px solid var(--primary-txt); */
+  overflow: auto;
 }
 .creditImage {
   display: flex;
@@ -449,16 +440,12 @@ textarea {
   display: none;
 }
 
-/* ----------------------------- footer section ----------------------------- */
-/* footer {
-  color: var(--secondary-txt);
-} */
-@media only screen and (max-width: 1172px) {
-}
+/* ------------------------------ media queries ----------------------------- */
 
 @media only screen and (max-width: 1172px) {
   #Home {
     flex-direction: column;
+    padding-bottom: 40px;
   }
   h1.myName {
     font-size: 40px;
@@ -466,18 +453,17 @@ textarea {
   .nameTxt {
     font-size: 30px;
   }
-  .heroImage{
+  .heroImage {
     width: 90%;
     height: 60%;
   }
-  .heroImage>img{
+  .heroImage > img {
     width: 100%;
     height: 100%;
   }
-  #Projects .projectsList{
+  #Projects .projectsList {
     flex-direction: column;
     align-items: center;
-    /* border: 2px solid red; */
   }
 }
 
@@ -487,7 +473,7 @@ textarea {
   }
   header {
     position: relative;
-    /* border: 2px solid red; */
+
     box-shadow: 1px 1px 20px -8px rgb(27, 27, 27);
     margin-bottom: 10px;
     padding: 0 15px;
@@ -512,7 +498,6 @@ textarea {
     background-color: #1f2e4b;
     height: 100vh;
     width: 100vw;
-    /* border: 2px solid red; */
   }
   .mobileNav a {
     margin: 20px;
@@ -528,7 +513,6 @@ textarea {
     max-width: 50px;
     height: 37px;
     z-index: 3;
-    /* border: 2px solid red; */
   }
   .hamburgerMenu i {
     width: 27px;
@@ -568,14 +552,13 @@ textarea {
     width: 40px;
   }
 
-  /* ----------------------------- socials sideBar ---------------------------- */
-  aside#socials {
+  /* ----------------------------- contactVia sideBar ---------------------------- */
+  aside#contactVia {
     padding: 7px;
   }
   /* -------------------------------- home page ------------------------------- */
   #Home {
     flex-direction: column;
-    /* border: 2px solid red; */
     overflow: auto;
   }
   #introduction {
@@ -585,26 +568,17 @@ textarea {
     font-size: 14px;
   }
   h1.myName {
-    font-size: 25px;
+    font-size: 30px;
     margin-top: 10px;
   }
   .nameTxt {
-    font-size: 13px;
+    font-size: 15px;
   }
   h3.title {
-    font-size: 12px;
+    font-size: 14px;
   }
   .btn {
     font-size: 11px;
-  }
-  .heroImage {
-    height: 40%;
-    width: 100%;
-  }
-  .heroImage > img {
-    /* height: 222px; */
-    height: 100%;
-    width: 100%;
   }
 
   /* ------------------------------ Projects Page ----------------------------- */
@@ -622,7 +596,7 @@ textarea {
     margin: 10px 0;
   }
   .projectInfo {
-    padding: 8px 10px;
+    padding: 0px 10px;
   }
   .projectTitle h1.primaryTxt {
     font-size: 15px;
@@ -633,12 +607,11 @@ textarea {
   .projectLinks {
     padding: 0;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-around;
     bottom: 0;
   }
   .projectLinks > a {
-    padding: 10px 5px;
+    padding: 0;
   }
   .projectLinks .MuiSvgIcon-root {
     font-size: 1.3rem;
