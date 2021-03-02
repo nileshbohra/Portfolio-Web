@@ -4,7 +4,7 @@ import Slide from "@material-ui/core/Slide";
 export default function Email() {
   return (
     <>
-      <Slide in={true} direction="left" timeout={1000}>
+      <Slide in={true} direction="left" timeout={3000}>
         <aside id="emailSideBar">
           <ul>
             <li>

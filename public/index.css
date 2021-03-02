@@ -455,7 +455,7 @@ textarea {
   }
   .heroImage {
     width: 90%;
-    height: 60%;
+    height: 55%;
   }
   .heroImage > img {
     width: 100%;
@@ -519,7 +519,6 @@ textarea {
     height: 3px;
     background-color: var(--primary-txt);
     transition: all ease 0.5s;
-    /* border: 2px solid var(--primary-txt); */
   }
   .hamburgerMenu i:nth-child(2) {
     width: 20px;

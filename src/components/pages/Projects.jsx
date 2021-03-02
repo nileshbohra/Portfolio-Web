@@ -11,8 +11,8 @@ export default function Projects() {
           imageAlt="Personal Portfolio"
           projectTitle="Personal Portfolio"
           projectDesc="Personal Portfolio Website made with ReactJs, MaterialUI"
-          projectWebsite="https://dicegame-js.netlify.app/"
-          projectCode="https://github.com/nileshbohra/DiceGame"
+          projectWebsite="https://nileshbohra.netlify.app/"
+          projectCode="https://github.com/nileshbohra/Portfolio-Web"
         />
       </div>
       <div className="projectsList">

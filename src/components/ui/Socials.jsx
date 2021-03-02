@@ -8,7 +8,7 @@ export default function Socials() {
   return (
     <>
       <aside id="contactVia">
-        <Slide in={true} direction="right" timeout={1000}>
+        <Slide in={true} direction="right" timeout={3000}>
           <ul>
             <li>
               <a
