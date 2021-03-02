@@ -1,0 +1,674 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap");
+
+/* font-family: 'Roboto', sans-serif; */
+
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* css variables */
+:root {
+  /* --primary-bg: #091223; */
+  --primary-bg: #27283d;
+  --primary-txt: #92f8db;
+  --secondary-txt: #9aa2b4;
+}
+
+/* --------------------------------- global --------------------------------- */
+body {
+  background-color: var(--primary-bg);
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  /* border: 2px solid red; */
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-txt);
+}
+
+.primaryTxt {
+  color: var(--primary-txt);
+}
+.secondaryTxt {
+  color: var(--secondary-txt);
+}
+
+h1.heading {
+  margin-bottom: 30px;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-style: italic;
+  font-family: serif;
+}
+h1.heading::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+  background-color: var(--secondary-txt);
+  margin-right: 10px;
+}
+.btn {
+  border: 2px solid var(--primary-txt);
+  background-color: transparent;
+  color: var(--primary-txt);
+  padding: 10px 13px;
+}
+.btn:hover {
+  background-color: var(--primary-txt);
+  color: var(--primary-bg);
+  font-weight: 900;
+}
+
+/* custom scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-txt);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-txt);
+}
+
+/* ------------------------------ header section ------------------------------ */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  padding: 1% 2%;
+  position: sticky;
+  top: 0px;
+}
+.logo a {
+  text-decoration: none;
+  color: var(--primary-txt);
+  font-weight: 900;
+  font-size: 20px;
+}
+.logo a:hover {
+  color: #92f8dbc4;
+}
+nav > ul {
+  list-style: none;
+}
+ul > li {
+  display: inline-block;
+  margin: 0 12px;
+}
+li > a {
+  text-decoration: none;
+  color: var(--secondary-txt);
+  font-size: 14px;
+}
+li > a:hover {
+  color: var(--primary-txt);
+}
+
+/* ------------------------- socials sideBar section ------------------------ */
+aside#socials {
+  max-width: 5%;
+  width: 5%;
+  padding: 10px;
+  position: absolute;
+  height: 90vh;
+  bottom: 0;
+  left: 0;
+}
+
+#socials ul {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#socials ul::after {
+  content: "";
+  display: block;
+  height: 100px;
+  width: 2px;
+  background-color: var(--secondary-txt);
+}
+#socials li {
+  padding: 10px;
+  list-style: none;
+}
+
+/* ---------------------------- main Hero section --------------------------- */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5%;
+  height: 90vh;
+  width: 90%;
+  max-width: 90%;
+  margin: 0 auto;
+  /* overflow: auto; */
+  /* border: 2px solid red; */
+}
+
+/* ------------------------------ home section ------------------------------ */
+#Home {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 100%;
+}
+
+#introduction {
+  padding: 0 15px;
+}
+h1.myName {
+  color: var(--primary-txt);
+  font-size: 55px;
+  margin-top: 10px;
+  font-family: serif;
+  text-shadow: 1px 1px 5px rgb(34, 34, 34);
+}
+.nameTxt {
+  font-family: serif;
+  font-size: 40px;
+  display: block;
+}
+h3.title {
+  text-shadow: 1px 2px 5px rgb(17, 17, 17);
+  font-weight: 500;
+  font-size: 19px;
+  margin-top: 4px;
+  font-style: italic;
+}
+#introduction p.secondaryTxt {
+  color: var(--secondary-txt);
+  line-height: 1.5;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+.btnResume {
+  margin-top: 10px;
+}
+.heroImage > img {
+  height: 400px;
+  width: 600px;
+}
+/* --------------------------- About page section --------------------------- */
+#About {
+  /* border: 2px solid red; */
+  height: 90vh;
+  width: 100%;
+}
+div.content {
+  /* border: 2px solid red; */
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.aboutPageImage {
+  text-align: center;
+  width: 40%;
+  overflow: hidden;
+}
+.aboutPageImage > img {
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+}
+.aboutDesc {
+  padding: 0px 30px;
+  width: 60%;
+}
+.aboutDesc span.nameTxt {
+  font-size: 25px;
+}
+.aboutDesc h1.myName {
+  font-size: 40px;
+}
+.aboutDesc h3.title {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+.aboutDesc p.secondaryTxt {
+  line-height: 1.5;
+  letter-spacing: 1px;
+  color: var(--secondary-txt);
+}
+
+/* ----------------------------- skills section ----------------------------- */
+#Skills {
+  margin-top: 30px;
+  /* border: 2px solid red; */
+}
+#Skills > h1 {
+  margin: 0;
+}
+#Skills > .content {
+  /* border: 2px solid red; */
+  justify-content: space-evenly;
+}
+.mern {
+  width: 280px;
+  height: 120px;
+}
+
+/* -------------------------- Projects page section ------------------------- */
+#Projects {
+  padding: 20px;
+  height: 90vh;
+  width: 100%;
+  position: relative;
+  overflow: auto;
+}
+.projectsList {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  /* border: 2px solid blue; */
+}
+.projectItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border: 2px solid var(--primary-txt);
+  width: 500px;
+  margin: 10px;
+  padding: 10px 20px;
+  height: 220px;
+  overflow: auto;
+}
+.projectImage {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  /* border: 2px solid red; */
+}
+.projectImgs {
+  width: 100%;
+  height: 100%;
+}
+.projectInfo {
+  position: relative;
+  width: 50%;
+  padding: 15px;
+}
+.descCol {
+  display: flex;
+  flex-direction: column;
+}
+.projectLinks {
+  position: absolute;
+  width: 80%;
+  bottom: 10px;
+  padding: 5px 10px;
+  /* border: 2px solid red; */
+}
+.projectDesc {
+  margin-top: 6px;
+}
+.projectLinks > a {
+  padding: 0 20px;
+}
+#Projects > .moreProjects {
+  /* text-align: right; */
+  margin-top: 30px;
+}
+/* -------------------------- contact page section -------------------------- */
+
+#Contact {
+  padding: 20px;
+  height: 90vh;
+  width: 100%;
+  overflow: auto;
+}
+.contactForm {
+  display: flex;
+  justify-content: center;
+}
+form {
+  width: 70%;
+}
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin: 13px 10px 0px;
+}
+.formGroup label {
+  color: var(--secondary-txt);
+}
+.row {
+  display: flex;
+}
+.col {
+  width: 50%;
+}
+.formGroup input,
+textarea {
+  color: var(--primary-txt);
+  padding: 9px 15px;
+  background-color: transparent;
+  outline: none;
+  border: 2px solid var(--primary-txt);
+  margin-top: 6px;
+  font-size: 15.5px;
+  letter-spacing: 0.7px;
+  font-weight: 600;
+}
+textarea {
+  resize: vertical;
+}
+
+/* -------------------------- Credits Page section -------------------------- */
+#Credits {
+  height: 90vh;
+  width: 80%;
+  line-height: 2;
+  /* border:2px solid var(--primary-txt); */
+}
+.creditImage {
+  display: flex;
+  padding: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 2px solid var(--primary-txt);
+  text-align: center;
+  width: 100%;
+}
+.creditImage > img {
+  height: 200px;
+  width: 300px;
+}
+
+/* -------------------------- email sideBar section ------------------------- */
+#emailSideBar {
+  position: absolute;
+  right: 5px;
+  bottom: 8px;
+  width: 5%;
+  max-width: 5%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+#emailSideBar ul {
+  position: absolute;
+  bottom: 180px;
+  transform: rotate(90deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#emailSideBar li {
+  list-style: none;
+}
+#emailSideBar li > a {
+  text-decoration: none;
+  color: var(--secondary-txt);
+  letter-spacing: 3px;
+}
+#emailSideBar li > a:hover {
+  color: var(--primary-txt);
+}
+#emailSideBar li > hr {
+  width: 100px;
+  border: 1px solid var(--secondary-txt);
+}
+
+.hamburgerMenu {
+  display: none;
+}
+.mobileNav {
+  display: none;
+}
+
+/* ----------------------------- footer section ----------------------------- */
+/* footer {
+  color: var(--secondary-txt);
+} */
+@media only screen and (max-width: 1172px) {
+}
+
+@media only screen and (max-width: 1172px) {
+  #Home {
+    flex-direction: column;
+  }
+  h1.myName {
+    font-size: 40px;
+  }
+  .nameTxt {
+    font-size: 30px;
+  }
+  .heroImage{
+    width: 90%;
+    height: 60%;
+  }
+  .heroImage>img{
+    width: 100%;
+    height: 100%;
+  }
+  #Projects .projectsList{
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid red; */
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  header {
+    position: relative;
+    /* border: 2px solid red; */
+    box-shadow: 1px 1px 20px -8px rgb(27, 27, 27);
+    margin-bottom: 10px;
+    padding: 0 15px;
+  }
+  .logo a {
+    font-size: 18px;
+  }
+  #topNav {
+    display: none;
+  }
+  .mobileNav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2e4b;
+    height: 100vh;
+    width: 100vw;
+    /* border: 2px solid red; */
+  }
+  .mobileNav a {
+    margin: 20px;
+    letter-spacing: 1.3px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .hamburgerMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    max-width: 50px;
+    height: 37px;
+    z-index: 3;
+    /* border: 2px solid red; */
+  }
+  .hamburgerMenu i {
+    width: 27px;
+    height: 3px;
+    background-color: var(--primary-txt);
+    transition: all ease 0.5s;
+    /* border: 2px solid var(--primary-txt); */
+  }
+  .hamburgerMenu i:nth-child(2) {
+    width: 20px;
+    background-color: red;
+  }
+
+  .open:nth-child(1) {
+    transform: rotate(45deg) translateY(14px);
+  }
+  .open:nth-child(2) {
+    opacity: 0;
+  }
+  .open:nth-child(3) {
+    transform: rotate(-45deg) translateY(-14px);
+  }
+  .close:nth-child(1) {
+    transform: rotate(0deg) translateY(0px);
+  }
+  .close:nth-child(2) {
+    opacity: 1;
+  }
+  .close:nth-child(3) {
+    transform: rotate(0deg) translateY(0px);
+  }
+
+  h1.heading {
+    font-size: 1.2rem;
+  }
+  h1.heading::before {
+    width: 40px;
+  }
+
+  /* ----------------------------- socials sideBar ---------------------------- */
+  aside#socials {
+    padding: 7px;
+  }
+  /* -------------------------------- home page ------------------------------- */
+  #Home {
+    flex-direction: column;
+    /* border: 2px solid red; */
+    overflow: auto;
+  }
+  #introduction {
+    padding: 0 10px;
+  }
+  #introduction p.secondaryTxt {
+    font-size: 14px;
+  }
+  h1.myName {
+    font-size: 25px;
+    margin-top: 10px;
+  }
+  .nameTxt {
+    font-size: 13px;
+  }
+  h3.title {
+    font-size: 12px;
+  }
+  .btn {
+    font-size: 11px;
+  }
+  .heroImage {
+    height: 40%;
+    width: 100%;
+  }
+  .heroImage > img {
+    /* height: 222px; */
+    height: 100%;
+    width: 100%;
+  }
+
+  /* ------------------------------ Projects Page ----------------------------- */
+  #Projects {
+    padding: 10px;
+  }
+  .projectsList {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .projectItem {
+    width: auto;
+    height: 175px;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  .projectInfo {
+    padding: 8px 10px;
+  }
+  .projectTitle h1.primaryTxt {
+    font-size: 15px;
+  }
+  .projectDesc p.secondaryTxt {
+    font-size: 12px;
+  }
+  .projectLinks {
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    bottom: 0;
+  }
+  .projectLinks > a {
+    padding: 10px 5px;
+  }
+  .projectLinks .MuiSvgIcon-root {
+    font-size: 1.3rem;
+  }
+
+  /* ------------------------------ Contact Page ------------------------------ */
+
+  .contactForm form {
+    width: 100%;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .col {
+    width: 100%;
+  }
+  .formGroup label {
+    font-size: 15px;
+  }
+  .formGroup input,
+  textarea {
+    font-size: 12px;
+  }
+
+  /* ------------------------------ credits Page ------------------------------ */
+  .creditImage {
+    flex-direction: column;
+  }
+  .creditImage > img {
+    height: 186px;
+    width: 250px;
+  }
+}

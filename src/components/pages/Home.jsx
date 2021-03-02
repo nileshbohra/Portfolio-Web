@@ -1,0 +1,32 @@
+import React from "react";
+
+export default function Home() {
+  return (
+    <section id="Home">
+      <div id="introduction">
+        <p className="secondaryTxt">Hi there,</p>
+        <h1 className="primaryTxt myName">
+          <span className="nameTxt">I'm</span> Nilesh Bohra
+        </h1>
+        <h3 className="primaryTxt title">A FullStack Developer</h3>
+        <p className="secondaryTxt">
+          I am always ready to learn new skills and technologies.As a full stack
+          developer my skills focuses on front-end as well as back-end
+          development. I have already made few web based projects present on my <a href="https://github.com/nileshbohra" target="_blank">
+            GitHub
+          </a>
+          .I currently have knowledge of developing web projects using MERN ie
+          Mongodb,Express,React and Node with HTML5, CSS3, JavaScript, Ejs,
+          jQuery, Bootstrap.
+        </p>
+        <button className="btn btnResume">Resume</button>
+      </div>
+      <div className="heroImage">
+        <img
+          src="./images/heroImage.jpg"
+          alt="heroImage"
+        />
+      </div>
+    </section>
+  );
+}
