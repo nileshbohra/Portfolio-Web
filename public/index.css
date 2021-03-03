@@ -59,6 +59,7 @@ h1.heading::before {
   background-color: transparent;
   color: var(--primary-txt);
   padding: 10px 13px;
+  transition: all linear 0.3s;
 }
 .btn:hover {
   background-color: var(--primary-txt);
@@ -131,30 +132,23 @@ aside#contactVia {
   width: 5%;
   padding: 10px;
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 90vh;
   bottom: 0;
   left: 0;
 }
 
-#contactVia ul {
-  position: absolute;
-  bottom: 10px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+#contactVia > a{
+  color: var(--secondary-txt);
+  margin: 10px;
+  transition: all ease 0.4s;
 }
-#contactVia ul::after {
-  content: "";
-  display: block;
-  height: 100px;
-  width: 2px;
-  background-color: var(--secondary-txt);
-}
-#contactVia li {
-  padding: 10px;
-  list-style: none;
+
+#contactVia>a:hover{
+  color: var(--primary-txt);
 }
 
 /* ---------------------------- main Hero section --------------------------- */
@@ -162,7 +156,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 5%;
+  padding: 0 3%;
   height: 90vh;
   width: 90%;
   max-width: 90%;
@@ -214,61 +208,6 @@ h3.title {
   height: 400px;
   width: 600px;
 }
-/* --------------------------- About page section --------------------------- */
-/* #About {
-  height: 90vh;
-  width: 100%;
-}
-div.content {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-}
-.aboutPageImage {
-  text-align: center;
-  width: 40%;
-  overflow: hidden;
-}
-.aboutPageImage > img {
-  border-radius: 10px;
-  width: 300px;
-  height: 300px;
-}
-.aboutDesc {
-  padding: 0px 30px;
-  width: 60%;
-}
-.aboutDesc span.nameTxt {
-  font-size: 25px;
-}
-.aboutDesc h1.myName {
-  font-size: 40px;
-}
-.aboutDesc h3.title {
-  font-size: 17px;
-  margin-bottom: 10px;
-}
-.aboutDesc p.secondaryTxt {
-  line-height: 1.5;
-  letter-spacing: 1px;
-  color: var(--secondary-txt);
-} */
-
-/* ----------------------------- skills section ----------------------------- */
-/* #Skills {
-  margin-top: 30px;
-}
-#Skills > h1 {
-  margin: 0;
-}
-#Skills > .content {
-  justify-content: space-evenly;
-}
-.mern {
-  width: 280px;
-  height: 120px;
-} */
 
 /* -------------------------- Projects page section ------------------------- */
 #Projects {
@@ -282,7 +221,6 @@ div.content {
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
-  /* border: 2px solid blue; */
 }
 .projectItem {
   display: flex;
@@ -326,7 +264,6 @@ div.content {
   padding: 0 20px;
 }
 #Projects > .moreProjects {
-  /* text-align: right; */
   margin-top: 20px;
   margin-bottom: 30px;
 }
@@ -409,28 +346,16 @@ textarea {
   align-items: center;
   overflow: hidden;
 }
-#emailSideBar ul {
-  position: absolute;
-  bottom: 180px;
-  transform: rotate(90deg);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#emailSideBar li {
-  list-style: none;
-}
-#emailSideBar li > a {
+#emailSideBar a {
   text-decoration: none;
+  text-align: center;
+  transform: rotate(90deg);
   color: var(--secondary-txt);
   letter-spacing: 3px;
+  transition: all ease 0.4s;
 }
-#emailSideBar li > a:hover {
+#emailSideBar a:hover {
   color: var(--primary-txt);
-}
-#emailSideBar li > hr {
-  width: 100px;
-  border: 1px solid var(--secondary-txt);
 }
 
 .hamburgerMenu {
@@ -454,8 +379,8 @@ textarea {
     font-size: 30px;
   }
   .heroImage {
-    width: 90%;
-    height: 55%;
+    width: 100%;
+    height: 50%;
   }
   .heroImage > img {
     width: 100%;
@@ -473,7 +398,6 @@ textarea {
   }
   header {
     position: relative;
-
     box-shadow: 1px 1px 20px -8px rgb(27, 27, 27);
     margin-bottom: 10px;
     padding: 0 15px;
@@ -551,9 +475,13 @@ textarea {
     width: 40px;
   }
 
+  main{
+    padding: 0 5%;
+    /* border: 2px solid red; */
+  }
   /* ----------------------------- contactVia sideBar ---------------------------- */
   aside#contactVia {
-    padding: 7px;
+    padding: 15px;
   }
   /* -------------------------------- home page ------------------------------- */
   #Home {
@@ -577,7 +505,11 @@ textarea {
     font-size: 14px;
   }
   .btn {
-    font-size: 11px;
+    font-size: 12px;
+  }
+  .heroImage {
+    width: 90%;
+    height: 47%;
   }
 
   /* ------------------------------ Projects Page ----------------------------- */

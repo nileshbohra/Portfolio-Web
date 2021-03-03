@@ -6,16 +6,9 @@ export default function Email() {
     <>
       <Slide in={true} direction="left" timeout={3000}>
         <aside id="emailSideBar">
-          <ul>
-            <li>
-              <a href="mailto:nileshbohra2000@gmail.com">
-                nileshbohra2000@gmail.com
-              </a>
-            </li>
-            <li>
-              <hr />
-            </li>
-          </ul>
+          <a href="mailto:nileshbohra2000@gmail.com">
+            nileshbohra2000@gmail.com
+          </a>
         </aside>
       </Slide>
     </>
