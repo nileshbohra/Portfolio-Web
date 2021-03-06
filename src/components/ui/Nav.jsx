@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-// import MenuIcon from "@material-ui/icons/Menu";
-// import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Nav() {
   const [status, setStatus] = useState("close");
@@ -8,12 +7,14 @@ export default function Nav() {
     <>
       <header>
         <div className="logo">
-          <a href="/Home">Nilesh Bohra</a>
+          <NavLink to="/Home" activeClassName="none">
+            Nilesh Bohra
+          </NavLink>
         </div>
         <nav id="topNav">
           <ul>
             <li>
-              <a href="/Home">Home</a>
+              <NavLink to="/Home">Home</NavLink>
             </li>
             <li>
               <a
@@ -23,33 +24,29 @@ export default function Nav() {
                 Skills
               </a>
             </li>
-            {/* <li>
-              <a href="/About">About</a>
-            </li> */}
             <li>
-              <a href="/Projects">Projects</a>
+              <NavLink to="/Projects">Projects</NavLink>
             </li>
             <li>
-              <a href="/Contact">Contact</a>
+              <NavLink to="/Contact">Contact</NavLink>
             </li>
             <li>
-              <a href="/Credits">Credits</a>
+              <NavLink to="/Credits">Credits</NavLink>
             </li>
           </ul>
         </nav>
         {status === "open" ? (
           <nav className="mobileNav">
-            <a href="/Home">Home</a>
+            <NavLink to="/Home">Home</NavLink>
             <a
               href="https://www.linkedin.com/in/nilesh-bohra-4188a21a1/detail/skills/"
               target="_blank"
             >
               Skills
             </a>
-            {/* <a href="/About">About</a> */}
-            <a href="/Projects">Projects</a>
-            <a href="/Contact">Contact</a>
-            <a href="/Credits">Credits</a>
+            <NavLink to="/Projects">Projects</NavLink>
+            <NavLink to="/Contact">Contact</NavLink>
+            <NavLink to="/Credits">Credits</NavLink>
           </nav>
         ) : null}
         <div

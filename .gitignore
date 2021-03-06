@@ -27,3 +27,6 @@ yarn-error.log*
 
 #folders
 ./.vscode
+
+#local_files
+src/components/pages/About.jsx

@@ -39,7 +39,6 @@ a {
 
 h1.heading {
   margin-bottom: 30px;
-
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -113,19 +112,23 @@ header {
 nav > ul {
   list-style: none;
 }
-ul > li {
+nav ul > li {
   display: inline-block;
-  margin: 0 12px;
+  margin: 0 14px;
 }
 li > a {
   text-decoration: none;
   color: var(--secondary-txt);
-  font-size: 14px;
+  font-size: 15px;
+  padding: 4px 0;
 }
 li > a:hover {
   color: var(--primary-txt);
 }
-
+.active{
+  border-bottom: 2px solid var(--primary-txt);
+  border-radius: 4px;
+}
 /* ------------------------- contactVia sideBar section ------------------------ */
 aside#contactVia {
   max-width: 5%;
@@ -141,13 +144,13 @@ aside#contactVia {
   left: 0;
 }
 
-#contactVia > a{
+#contactVia > a {
   color: var(--secondary-txt);
   margin: 10px;
   transition: all ease 0.4s;
 }
 
-#contactVia>a:hover{
+#contactVia > a:hover {
   color: var(--primary-txt);
 }
 
@@ -267,8 +270,8 @@ h3.title {
   margin-top: 20px;
   margin-bottom: 30px;
 }
-/* -------------------------- contact page section -------------------------- */
 
+/* -------------------------- contact page section -------------------------- */
 #Contact {
   padding: 20px;
   height: 90vh;
@@ -282,10 +285,15 @@ h3.title {
 form {
   width: 70%;
 }
+.formGroup:nth-child(1),
+.formGroup:nth-child(2) {
+  margin: 0;
+}
+
 .formGroup {
   display: flex;
   flex-direction: column;
-  margin: 13px 10px 0px;
+  margin: 15px 0;
 }
 .formGroup label {
   color: var(--secondary-txt);
@@ -296,8 +304,12 @@ form {
 .col {
   width: 50%;
 }
+.col:nth-child(2) {
+  margin-left: 13px;
+}
 .formGroup input,
 textarea {
+  border: 2px solid red;
   color: var(--primary-txt);
   padding: 9px 15px;
   background-color: transparent;
@@ -379,12 +391,13 @@ textarea {
     font-size: 30px;
   }
   .heroImage {
+    margin-top: 10px;
     width: 100%;
-    height: 50%;
+    text-align: center;
   }
   .heroImage > img {
     width: 100%;
-    height: 100%;
+    height: auto;
   }
   #Projects .projectsList {
     flex-direction: column;
@@ -475,13 +488,12 @@ textarea {
     width: 40px;
   }
 
-  main{
+  main {
     padding: 0 5%;
-    /* border: 2px solid red; */
   }
   /* ----------------------------- contactVia sideBar ---------------------------- */
   aside#contactVia {
-    padding: 15px;
+    padding: 20px;
   }
   /* -------------------------------- home page ------------------------------- */
   #Home {
@@ -507,9 +519,9 @@ textarea {
   .btn {
     font-size: 12px;
   }
-  .heroImage {
-    width: 90%;
-    height: 47%;
+  .heroImage > img {
+    width: 100%;
+    height: auto;
   }
 
   /* ------------------------------ Projects Page ----------------------------- */
@@ -549,9 +561,9 @@ textarea {
   }
 
   /* ------------------------------ Contact Page ------------------------------ */
-
   .contactForm form {
     width: 100%;
+    padding: 10px;
   }
   .row {
     flex-direction: column;
@@ -565,6 +577,14 @@ textarea {
   .formGroup input,
   textarea {
     font-size: 12px;
+  }
+  .col:nth-child(2) {
+    margin-left: 0px;
+  }
+  .btnSubmit {
+    margin: 14px auto;
+    width: 100%;
+    align-items: center;
   }
 
   /* ------------------------------ credits Page ------------------------------ */

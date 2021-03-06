@@ -9,6 +9,7 @@ export default function FormGroup(props) {
         name={props.inputName}
         id={props.labelFor}
         placeholder={props.inputPlaceholder}
+        autoComplete={props.autoComplete}
         required={props.required}
       />
     </div>
