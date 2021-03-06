@@ -5,21 +5,30 @@ import MuiAlert from "@material-ui/lab/Alert";
 import Slide from "@material-ui/core/Slide";
 
 export default function Contact() {
+  //Snackbar for Success
   function Alert(props) {
     return <MuiAlert elevation={6} variant="filled" {...props} />;
   }
-  const [open, setOpen] = React.useState(false);
+  const [openSuccess, setOpenSuccess] = React.useState(false);
+  const [openError, setOpenError] = React.useState(false);
 
-  const handleClick = () => {
-    setOpen(true);
+  const handleSuccess = () => {
+    setOpenSuccess(true);
   };
-
-  const handleClose = (event, reason) => {
+  const handleError = () => {
+    setOpenError(true);
+  };
+  const handleCloseSuccess = (event, reason) => {
     if (reason === "clickaway") {
       return;
     }
-
-    setOpen(false);
+    setOpenSuccess(false);
+  };
+  const handleCloseError = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+    setOpenError(false);
   };
 
   return (
@@ -27,7 +36,15 @@ export default function Contact() {
       <section id="Contact">
         <h1 className="primaryTxt heading">Contact Me</h1>
         <div className="contactForm">
-          <form name="contact" method="post">
+          <form name="contact" method="post" onSubmit={(e)=>{
+            if(e){
+              handleSuccess();
+            }else{
+              console.log("error");
+              handleError();
+            }
+            e.preventDefault();
+          }}>
             <input type="hidden" name="form-name" value="contact" />
             <div className="row">
               <div className="col">
@@ -73,9 +90,14 @@ export default function Contact() {
             <button className="btn formGroup btnSubmit" type="submit">
               Submit
             </button>
-            <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
-              <Alert onClose={handleClose} severity="success">
-                This is a success message!
+            <Snackbar open={openSuccess} autoHideDuration={6000} onClose={handleCloseSuccess}>
+              <Alert onClose={handleCloseSuccess} severity="success">
+                Successfully submitted form!
+              </Alert>
+            </Snackbar>
+            <Snackbar open={openError} autoHideDuration={6000} onClose={handleCloseError}>
+              <Alert onClose={handleCloseError} severity="error">
+                Error When Submitting Form
               </Alert>
             </Snackbar>
           </form>
