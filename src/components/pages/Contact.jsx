@@ -5,24 +5,29 @@ import MuiAlert from "@material-ui/lab/Alert";
 import Slide from "@material-ui/core/Slide";
 
 export default function Contact() {
-  //Snackbar for Success
+  //Snackbar
   function Alert(props) {
     return <MuiAlert elevation={6} variant="filled" {...props} />;
   }
-  const [openSuccess, setOpenSuccess] = React.useState(false);
-  const [openError, setOpenError] = React.useState(false);
 
+  //Hook States for Snackbars
+  const [openSuccess, setOpenSuccess] = useState(false);
+  const [openError, setOpenError] = useState(false);
+
+  //Success SnackBar
   const handleSuccess = () => {
     setOpenSuccess(true);
-  };
-  const handleError = () => {
-    setOpenError(true);
   };
   const handleCloseSuccess = (event, reason) => {
     if (reason === "clickaway") {
       return;
     }
     setOpenSuccess(false);
+  };
+
+  //Error Snackbar
+  const handleError = () => {
+    setOpenError(true);
   };
   const handleCloseError = (event, reason) => {
     if (reason === "clickaway") {
@@ -41,13 +46,8 @@ export default function Contact() {
             id="contactForm"
             method="post"
             onSubmit={(e) => {
-              // if (e) {
-              //   handleSuccess();
-              // } else {
-              //   console.log("error");
-              //   handleError();
-              // }
-              // e.preventDefault();
+              //Ajax Form Submission
+              //Will not reload Page
               e.preventDefault();
               let myForm = document.getElementById("contactForm");
               let formData = new FormData(myForm);
@@ -58,8 +58,20 @@ export default function Contact() {
                 },
                 body: new URLSearchParams(formData).toString(),
               })
-                .then(() => handleSuccess())
-                .catch((error) => alert(error));
+                .then(() => {
+                  setTimeout(() => {
+                    //Shows Success Snackbar
+                    handleSuccess();
+                    myForm.reset();
+                  }, 1000);
+                })
+                .catch((error) => {
+                  setTimeout(() => {
+                    //Shows Error SnackBar
+                    handleError();
+                    myForm.reset();
+                  }, 1000);
+                });
             }}
           >
             <input type="hidden" name="form-name" value="contact" />
@@ -85,7 +97,6 @@ export default function Contact() {
                 />
               </div>
             </div>
-
             <FormGroup
               labelFor="subject"
               labelText="Subject"
@@ -107,6 +118,8 @@ export default function Contact() {
             <button className="btn formGroup btnSubmit" type="submit">
               Submit
             </button>
+            {/* ---------------------------- Snackbars Section
+            --------------------------- */}
             <Snackbar
               open={openSuccess}
               autoHideDuration={6000}
