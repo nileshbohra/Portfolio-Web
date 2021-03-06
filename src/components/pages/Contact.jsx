@@ -36,15 +36,32 @@ export default function Contact() {
       <section id="Contact">
         <h1 className="primaryTxt heading">Contact Me</h1>
         <div className="contactForm">
-          <form name="contact" method="post" onSubmit={(e)=>{
-            if(e){
-              handleSuccess();
-            }else{
-              console.log("error");
-              handleError();
-            }
-            e.preventDefault();
-          }}>
+          <form
+            name="contact"
+            id="contactForm"
+            method="post"
+            onSubmit={(e) => {
+              // if (e) {
+              //   handleSuccess();
+              // } else {
+              //   console.log("error");
+              //   handleError();
+              // }
+              // e.preventDefault();
+              e.preventDefault();
+              let myForm = document.getElementById("contactForm");
+              let formData = new FormData(myForm);
+              fetch("/", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/x-www-form-urlencoded",
+                },
+                body: new URLSearchParams(formData).toString(),
+              })
+                .then(() => handleSuccess())
+                .catch((error) => alert(error));
+            }}
+          >
             <input type="hidden" name="form-name" value="contact" />
             <div className="row">
               <div className="col">
@@ -90,12 +107,20 @@ export default function Contact() {
             <button className="btn formGroup btnSubmit" type="submit">
               Submit
             </button>
-            <Snackbar open={openSuccess} autoHideDuration={6000} onClose={handleCloseSuccess}>
+            <Snackbar
+              open={openSuccess}
+              autoHideDuration={6000}
+              onClose={handleCloseSuccess}
+            >
               <Alert onClose={handleCloseSuccess} severity="success">
                 Successfully submitted form!
               </Alert>
             </Snackbar>
-            <Snackbar open={openError} autoHideDuration={6000} onClose={handleCloseError}>
+            <Snackbar
+              open={openError}
+              autoHideDuration={6000}
+              onClose={handleCloseError}
+            >
               <Alert onClose={handleCloseError} severity="error">
                 Error When Submitting Form
               </Alert>
