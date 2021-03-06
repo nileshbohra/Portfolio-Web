@@ -37,16 +37,47 @@ export default function Nav() {
         </nav>
         {status === "open" ? (
           <nav className="mobileNav">
-            <NavLink to="/Home">Home</NavLink>
+            <NavLink
+              to="/Home"
+              onClick={() => {
+                setStatus("close");
+              }}
+            >
+              Home
+            </NavLink>
             <a
               href="https://www.linkedin.com/in/nilesh-bohra-4188a21a1/detail/skills/"
               target="_blank"
+              onClick={() => {
+                setStatus("close");
+              }}
             >
               Skills
             </a>
-            <NavLink to="/Projects">Projects</NavLink>
-            <NavLink to="/Contact">Contact</NavLink>
-            <NavLink to="/Credits">Credits</NavLink>
+            <NavLink
+              to="/Projects"
+              onClick={() => {
+                setStatus("close");
+              }}
+            >
+              Projects
+            </NavLink>
+            <NavLink
+              to="/Contact"
+              onClick={() => {
+                setStatus("close");
+              }}
+            >
+              Contact
+            </NavLink>
+            <NavLink
+              to="/Credits"
+              onClick={() => {
+                setStatus("close");
+              }}
+            >
+              Credits
+            </NavLink>
           </nav>
         ) : null}
         <div
