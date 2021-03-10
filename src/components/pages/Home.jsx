@@ -23,7 +23,7 @@ export default function Home() {
             Mongodb,Express,React and Node with HTML5, CSS3, JavaScript, Ejs,
             jQuery, Bootstrap.
           </p>
-          <button className="btn btnResume">Resume</button>
+          <a className="btn btnResume">Resume</a>
         </div>
         <div className="heroImage">
           <img src="./images/heroImage.jpg" alt="heroImage" />

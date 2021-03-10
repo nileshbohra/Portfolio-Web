@@ -59,6 +59,7 @@ export default function Contact() {
                 body: new URLSearchParams(formData).toString(),
               })
                 .then(() => {
+                  //This will wait 1sec and reset the form fields after submission
                   setTimeout(() => {
                     //Shows Success Snackbar
                     handleSuccess();

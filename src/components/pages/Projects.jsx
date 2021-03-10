@@ -12,7 +12,7 @@ export default function Projects() {
             imageSrc="./images/ProjectImgs/personalPortfolio.png"
             imageAlt="Personal Portfolio"
             projectTitle="Personal Portfolio"
-            projectDesc="Personal Portfolio Website made with ReactJs, MaterialUI"
+            projectDesc="Portfolio Website made with ReactJs, MaterialUI"
             projectWebsite="https://nileshbohra.netlify.app/"
             projectCode="https://github.com/nileshbohra/Portfolio-Web"
           />
