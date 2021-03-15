@@ -100,7 +100,7 @@ h1.heading::before {
   overflow: hidden;
 }
 .splashScreenImg{
-  width: 200px;
+  width: 150px;
   animation-name: blink;
   animation-duration: 1.2s;
   animation-timing-function: ease;
