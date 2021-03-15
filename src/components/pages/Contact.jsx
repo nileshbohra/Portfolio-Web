@@ -41,6 +41,7 @@ export default function Contact() {
       <section id="Contact">
         <h1 className="primaryTxt heading">Contact Me</h1>
         <div className="contactForm">
+          <h1 className="primaryTxt">Get In Touch</h1>
           <form
             name="contact"
             id="contactForm"
@@ -111,7 +112,7 @@ export default function Contact() {
               <textarea
                 name="message"
                 id="message"
-                rows="8"
+                rows="6.5"
                 placeholder="Type Your Message"
                 required
               ></textarea>
