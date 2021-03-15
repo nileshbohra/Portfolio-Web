@@ -19,7 +19,7 @@ export default function App() {
         </Router>
       ) : (
         //splashScreen
-        <Slide in={true} direction="down" timeout={1000}>
+        <Slide in={true} direction="down" timeout={1500}>
           <div className="splashScreen">
             <img
               className="splashScreenImg"
@@ -31,7 +31,7 @@ export default function App() {
       )}
       {setTimeout(() => {
         setLoading(true);
-      }, 3500)}
+      }, 5000)}
     </>
   );
 }
