@@ -8,7 +8,7 @@ export default function Nav() {
       <header>
         <div className="logo">
           <NavLink to="/Home" activeClassName="none">
-            Nilesh Bohra
+            <img src="./images/NileshBohra.png" alt="" width="65" />
           </NavLink>
         </div>
         <nav id="topNav">

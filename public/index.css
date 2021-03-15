@@ -22,7 +22,7 @@ body {
   background-color: var(--primary-bg);
   height: 100vh;
   width: 100vw;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 a {
@@ -57,6 +57,7 @@ h1.heading::before {
   border: 2px solid var(--primary-txt);
   background-color: transparent;
   color: var(--primary-txt);
+  border-radius: 5px;
   padding: 10px 13px;
   transition: all linear 0.3s;
 }
@@ -89,6 +90,32 @@ h1.heading::before {
   background: var(--secondary-txt);
 }
 
+/* ------------------------------ splashScreen ------------------------------ */
+.splashScreen{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.splashScreenImg{
+  width: 200px;
+  animation-name: blink;
+  animation-duration: 1.2s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blink{
+  from{
+    filter: drop-shadow(0px 0px 4px var(--primary-txt));
+  }
+  to{
+    filter: drop-shadow(4px 2px 10px rgb(0, 0, 0));
+  }
+}
+
 /* ------------------------------ header section ------------------------------ */
 
 header {
@@ -96,18 +123,15 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 10vh;
-  padding: 1% 2%;
+  padding: 1.2% 2%;
   position: sticky;
-  top: 0px;
 }
-.logo a {
-  text-decoration: none;
-  color: var(--primary-txt);
-  font-weight: 900;
-  font-size: 20px;
+.logo {
+  filter: drop-shadow(4px 2px 10px rgb(0, 0, 0));
+  transition: all 0.5s ease;
 }
-.logo a:hover {
-  color: #92f8dbc4;
+.logo:hover {
+  filter: drop-shadow(0px 0px 1.5px var(--primary-txt));
 }
 nav > ul {
   list-style: none;
@@ -124,7 +148,7 @@ li > a {
 li > a:hover {
   color: var(--primary-txt);
 }
-.active{
+.active {
   padding: 4px 0;
   border-bottom: 2px solid var(--primary-txt);
   border-radius: 4px;
@@ -178,7 +202,8 @@ main {
 }
 
 #introduction {
-  padding: 0 15px;
+  width: 50%;
+  padding: 15px;
 }
 h1.myName {
   color: var(--primary-txt);
@@ -203,14 +228,15 @@ h3.title {
   color: var(--secondary-txt);
   line-height: 1.5;
   letter-spacing: 1px;
-  margin: 10px 0;
+  margin: 10px 0 25px;
 }
-.btnResume {
-  margin-top: 10px;
+
+.heroImage {
+  width: 50%;
 }
 .heroImage > img {
-  height: 400px;
-  width: 600px;
+  height: auto;
+  width: 100%;
 }
 
 /* -------------------------- Projects page section ------------------------- */
@@ -391,6 +417,9 @@ textarea {
   .nameTxt {
     font-size: 30px;
   }
+  #introduction{
+    width: 100%;
+  }
   .heroImage {
     margin-top: 10px;
     width: 100%;
@@ -410,7 +439,7 @@ textarea {
   .col {
     width: 100%;
   }
-  .col:nth-child(1){    
+  .col:nth-child(1) {
     margin-bottom: 10px;
   }
   .col:nth-child(2) {
@@ -428,9 +457,8 @@ textarea {
     margin-bottom: 10px;
     padding: 0 15px;
   }
-  .logo a {
-    font-size: 18px;
-  }
+  /* .logo {
+  } */
   #topNav {
     display: none;
   }
@@ -515,6 +543,7 @@ textarea {
   }
   #introduction {
     padding: 0 10px;
+    width: 100%;
   }
   #introduction p.secondaryTxt {
     font-size: 14px;
