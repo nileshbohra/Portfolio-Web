@@ -45,12 +45,12 @@ export default function Projects() {
             projectCode="https://github.com/nileshbohra/SuperHero-Vs-SuperVillian"
           />
           <ProjectItem
-            imageSrc="./images/ProjectImgs/simple-calculator.png"
-            imageAlt="Calculator"
-            projectTitle="Calculator"
-            projectDesc="Simple Web Based Calculator"
-            projectWebsite="https://simple-calculator-web.netlify.app/"
-            projectCode="https://github.com/nileshbohra/Calculator-in-js"
+            imageSrc="./images/ProjectImgs/weatherapp.png"
+            imageAlt="WeatherApp"
+            projectTitle="WeatherApp"
+            projectDesc="WeatherApp shows current Weather"
+            projectWebsite="https://weatherapp-zone.netlify.app/"
+            projectCode="https://github.com/nileshbohra/WeatherApp"
           />
         </div>
         <div className="moreProjects">
