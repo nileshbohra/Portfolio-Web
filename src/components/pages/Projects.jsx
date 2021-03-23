@@ -16,6 +16,14 @@ export default function Projects() {
             projectWebsite="https://nileshbohra.netlify.app/"
             projectCode="https://github.com/nileshbohra/Portfolio-Web"
           />
+          <ProjectItem
+            imageSrc="./images/ProjectImgs/weatherapp.png"
+            imageAlt="WeatherApp"
+            projectTitle="WeatherApp"
+            projectDesc="WeatherApp shows current Weather"
+            projectWebsite="https://weatherapp-zone.netlify.app/"
+            projectCode="https://github.com/nileshbohra/WeatherApp"
+          />
         </div>
         <div className="projectsList">
           <ProjectItem
@@ -43,14 +51,6 @@ export default function Projects() {
             projectDesc="Generates Random Names of Hero or Villian Upon Selection"
             projectWebsite="https://hero-vs-villian.herokuapp.com/"
             projectCode="https://github.com/nileshbohra/SuperHero-Vs-SuperVillian"
-          />
-          <ProjectItem
-            imageSrc="./images/ProjectImgs/weatherapp.png"
-            imageAlt="WeatherApp"
-            projectTitle="WeatherApp"
-            projectDesc="WeatherApp shows current Weather"
-            projectWebsite="https://weatherapp-zone.netlify.app/"
-            projectCode="https://github.com/nileshbohra/WeatherApp"
           />
         </div>
         <div className="moreProjects">
