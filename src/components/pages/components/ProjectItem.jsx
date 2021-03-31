@@ -1,8 +1,8 @@
 import React from "react";
 import LinkIcon from "@material-ui/icons/Link";
-import CodeIcon from "@material-ui/icons/Code";
 import Tooltip from "@material-ui/core/Tooltip";
 import Zoom from "@material-ui/core/Zoom";
+import GitHubIcon from "@material-ui/icons/GitHub";
 
 export default function ProjectItem(props) {
   return (
@@ -31,7 +31,7 @@ export default function ProjectItem(props) {
           </a>
           <a href={props.projectCode} target="_blank">
             <Tooltip title="Code" TransitionComponent={Zoom} arrow>
-              <CodeIcon />
+              <GitHubIcon />
             </Tooltip>
           </a>
         </div>

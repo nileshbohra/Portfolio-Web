@@ -256,6 +256,7 @@ h3.title {
 }
 
 .heroImage {
+  margin: 10px auto;
   width: 50%;
 }
 .heroImage > img {
