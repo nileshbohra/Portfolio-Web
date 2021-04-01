@@ -27,6 +27,14 @@ export default function Projects() {
         </div>
         <div className="projectsList">
           <ProjectItem
+            imageSrc="./images/ProjectImgs/notekeeper-reactapp.png"
+            imageAlt="NoteKeeperApp"
+            projectTitle="NoteKeeperApp"
+            projectDesc="FullStack NoteKeeperApp created with MERN stack"
+            projectWebsite="https://notekeeper-reactapp.netlify.app/"
+            projectCode="https://github.com/nileshbohra/NoteKeeper"
+          />
+          <ProjectItem
             imageSrc="./images/ProjectImgs/dicegame-js.png"
             imageAlt="DiceGame"
             projectTitle="DiceGame"
@@ -34,6 +42,8 @@ export default function Projects() {
             projectWebsite="https://dicegame-js.netlify.app/"
             projectCode="https://github.com/nileshbohra/DiceGame"
           />
+        </div>
+        <div className="projectsList">
           <ProjectItem
             imageSrc="./images/ProjectImgs/drumkit-web.png"
             imageAlt="DrumKit"
@@ -42,8 +52,6 @@ export default function Projects() {
             projectWebsite="https://drumkit-web.netlify.app/"
             projectCode="https://github.com/nileshbohra/DrumKit-Js"
           />
-        </div>
-        <div className="projectsList">
           <ProjectItem
             imageSrc="./images/ProjectImgs/hero-vs-villian.png"
             imageAlt="Hero V/s Villian"
