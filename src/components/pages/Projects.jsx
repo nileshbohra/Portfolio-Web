@@ -27,20 +27,20 @@ export default function Projects() {
         </div>
         <div className="projectsList">
           <ProjectItem
+            imageSrc="./images/ProjectImgs/todo-list-ease.netlify.png"
+            imageAlt="ToDoListApp"
+            projectTitle="ToDoListApp"
+            projectDesc="FullStack ToDoListApp created with MERN stack and RestAPI"
+            projectWebsite="https://todo-list-ease.netlify.app"
+            projectCode="https://github.com/nileshbohra/To-Do-List-App"
+          />
+          <ProjectItem
             imageSrc="./images/ProjectImgs/notekeeper-reactapp.png"
             imageAlt="NoteKeeperApp"
             projectTitle="NoteKeeperApp"
             projectDesc="FullStack NoteKeeperApp created with MERN stack"
             projectWebsite="https://notekeeper-reactapp.netlify.app/"
             projectCode="https://github.com/nileshbohra/NoteKeeper"
-          />
-          <ProjectItem
-            imageSrc="./images/ProjectImgs/dicegame-js.png"
-            imageAlt="DiceGame"
-            projectTitle="DiceGame"
-            projectDesc="Web Based Luck Game of Rolling Dice"
-            projectWebsite="https://dicegame-js.netlify.app/"
-            projectCode="https://github.com/nileshbohra/DiceGame"
           />
         </div>
         <div className="projectsList">
@@ -59,6 +59,16 @@ export default function Projects() {
             projectDesc="Generates Random Names of Hero or Villian Upon Selection"
             projectWebsite="https://hero-vs-villian.herokuapp.com/"
             projectCode="https://github.com/nileshbohra/SuperHero-Vs-SuperVillian"
+          />
+        </div>
+        <div className="projectsList">
+          <ProjectItem
+            imageSrc="./images/ProjectImgs/dicegame-js.png"
+            imageAlt="DiceGame"
+            projectTitle="DiceGame"
+            projectDesc="Web Based Luck Game of Rolling Dice"
+            projectWebsite="https://dicegame-js.netlify.app/"
+            projectCode="https://github.com/nileshbohra/DiceGame"
           />
         </div>
         <div className="moreProjects">
