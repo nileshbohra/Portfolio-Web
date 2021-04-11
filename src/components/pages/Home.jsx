@@ -20,10 +20,10 @@ export default function Home() {
               GitHub
             </a>
             .I currently have knowledge of developing web projects using MERN ie
-            Mongodb,Express,React and Node with HTML5, CSS3, JavaScript, Ejs,
+            Mongodb,Express,React and Node with HTML5, CSS3/SCSS, JavaScript, Ejs,
             jQuery, Bootstrap.
           </p>
-          <a className="btn btnResume">Resume</a>
+          <a href="./resume.pdf" target="_blank" className="btn btnResume">Resume</a>
         </div>
         <div className="heroImage">
           <img src="./images/heroImage.jpg" alt="heroImage" />
