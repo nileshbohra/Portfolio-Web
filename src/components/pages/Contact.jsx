@@ -51,7 +51,7 @@ export default function Contact() {
               //Will not reload Page
               e.preventDefault();
               let myForm = document.getElementById("contactForm");
-              let formData = new FormData(myForm);
+              let formData = new FormData(myForm);  
               fetch("/", {
                 method: "POST",
                 headers: {

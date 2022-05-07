@@ -9,12 +9,12 @@ export default function Projects() {
         <h1 className="primaryTxt heading">Projects</h1>
         <div className="projectsList">
           <ProjectItem
-            imageSrc="./images/ProjectImgs/personalPortfolio.png"
-            imageAlt="Personal Portfolio"
-            projectTitle="Personal Portfolio"
-            projectDesc="Portfolio Website made with ReactJs, MaterialUI"
-            projectWebsite="https://nileshbohra.netlify.app/"
-            projectCode="https://github.com/nileshbohra/Portfolio-Web"
+            imageSrc="./images/ProjectImgs/travel-advisor.png"
+            imageAlt="Travel Advisor"
+            projectTitle="Travel Advisor"
+            projectDesc="Travel Advisor is App that helps user to pick the best restaurants, hotels and attractions wherever they are in the world."
+            projectWebsite="https://the-travel-advisor-app.netlify.app/"
+            projectCode="https://github.com/nileshbohra/TravelAdvisor"
           />
           <ProjectItem
             imageSrc="./images/ProjectImgs/weatherapp.png"
