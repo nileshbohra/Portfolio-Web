@@ -11,6 +11,7 @@ export default function Socials() {
           <a
             href="https://www.linkedin.com/in/nilesh-bohra-4188a21a1/"
             target="_blank"
+            rel="nofollow"
           >
             <LinkedInIcon style={{ fontSize: 27 }} />
           </a>
