@@ -17,12 +17,17 @@ export default function Nav() {
               <NavLink to="/Home">Home</NavLink>
             </li>
             <li>
-              <a
+              <NavLink to="/Experience">Experience</NavLink>
+            </li>
+            <li>
+              <NavLink to="/Skills">Skills</NavLink>
+
+              {/* <a
                 href="https://www.linkedin.com/in/nilesh-bohra-4188a21a1/detail/skills/"
                 target="_blank"
               >
                 Skills
-              </a>
+              </a> */}
             </li>
             <li>
               <NavLink to="/Projects">Projects</NavLink>
@@ -30,9 +35,9 @@ export default function Nav() {
             <li>
               <NavLink to="/Contact">Contact</NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink to="/Credits">Credits</NavLink>
-            </li>
+            </li> */}
           </ul>
         </nav>
         {status === "open" ? (
@@ -45,7 +50,23 @@ export default function Nav() {
             >
               Home
             </NavLink>
-            <a
+            <NavLink
+              to="/Experience"
+              onClick={() => {
+                setStatus("close");
+              }}
+            >
+              Experience
+            </NavLink>
+            <NavLink
+              to="/Skills"
+              onClick={() => {
+                setStatus("close");
+              }}
+            >
+              Skills
+            </NavLink>
+            {/* <a
               href="https://www.linkedin.com/in/nilesh-bohra-4188a21a1/detail/skills/"
               target="_blank"
               onClick={() => {
@@ -53,7 +74,7 @@ export default function Nav() {
               }}
             >
               Skills
-            </a>
+            </a> */}
             <NavLink
               to="/Projects"
               onClick={() => {
@@ -70,14 +91,14 @@ export default function Nav() {
             >
               Contact
             </NavLink>
-            <NavLink
+            {/* <NavLink
               to="/Credits"
               onClick={() => {
                 setStatus("close");
               }}
             >
               Credits
-            </NavLink>
+            </NavLink> */}
           </nav>
         ) : null}
         <div

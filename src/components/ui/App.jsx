@@ -5,6 +5,7 @@ import Hero from "./Hero";
 import Email from "./Email";
 import Slide from "@material-ui/core/Slide";
 import { BrowserRouter as Router } from "react-router-dom";
+import Projects from "../pages/Projects";
 
 export default function App() {
   const [Loading, setLoading] = useState(false);
