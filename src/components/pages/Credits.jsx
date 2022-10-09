@@ -11,7 +11,11 @@ export default function Credits() {
             src="./images/heroImage.jpg"
             alt="Digital vector created by freepik - www.freepik.com"
           />
-          <a href="https://www.freepik.com/vectors/digital" target="_blank">
+          <a
+            href="https://www.freepik.com/vectors/digital"
+            target="_blank"
+            rel="nofollow"
+          >
             Digital vector created by freepik - www.freepik.com
           </a>
         </div>

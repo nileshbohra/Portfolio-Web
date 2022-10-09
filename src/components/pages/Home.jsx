@@ -16,14 +16,25 @@ export default function Home() {
             stack developer my skills focuses on front-end as well as back-end
             development. I have already made few web based projects present on
             my{" "}
-            <a href="https://github.com/nileshbohra" target="_blank">
+            <a
+              href="https://github.com/nileshbohra"
+              target="_blank"
+              rel="nofollow"
+            >
               GitHub
             </a>
             .I currently have knowledge of developing web projects using MERN ie
-            Mongodb,Express,React and Node with HTML5, CSS3/SCSS, JavaScript, Ejs,
-            jQuery, Bootstrap.
+            Mongodb,Express,React and Node with HTML5, CSS3/SCSS, JavaScript,
+            Ejs, jQuery, Bootstrap.
           </p>
-          <a href="./resume.pdf" target="_blank" className="btn btnResume">Resume</a>
+          <a
+            href="./resume.pdf"
+            target="_blank"
+            className="btn btnResume"
+            rel="nofollow"
+          >
+            Resume
+          </a>
         </div>
         <div className="heroImage">
           <img src="./images/heroImage.jpg" alt="heroImage" />

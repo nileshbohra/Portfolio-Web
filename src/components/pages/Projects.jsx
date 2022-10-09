@@ -76,6 +76,7 @@ export default function Projects() {
             href="https://github.com/nileshbohra?tab=repositories"
             target="_blank"
             className="btn"
+            rel="nofollow"
           >
             More Projects &nbsp;{">"}
           </a>
