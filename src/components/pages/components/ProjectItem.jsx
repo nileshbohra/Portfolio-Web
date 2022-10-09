@@ -24,12 +24,20 @@ export default function ProjectItem(props) {
           </div>
         </div>
         <div className="projectLinks">
-          <a href={props.projectWebsite} target="_blank" rel="nofollow">
+          <a
+            href={props.projectWebsite}
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+          >
             <Tooltip title="Website" TransitionComponent={Zoom} arrow>
               <LinkIcon />
             </Tooltip>
           </a>
-          <a href={props.projectCode} target="_blank" rel="nofollow">
+          <a
+            href={props.projectCode}
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+          >
             <Tooltip title="Code" TransitionComponent={Zoom} arrow>
               <CodeIcon />
             </Tooltip>

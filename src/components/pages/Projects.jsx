@@ -17,12 +17,12 @@ export default function Projects() {
             projectCode="https://github.com/nileshbohra/TravelAdvisor"
           />
           <ProjectItem
-            imageSrc="./images/ProjectImgs/weatherapp.png"
-            imageAlt="WeatherApp"
-            projectTitle="WeatherApp"
-            projectDesc="WeatherApp shows current Weather"
-            projectWebsite="https://weatherapp-zone.netlify.app/"
-            projectCode="https://github.com/nileshbohra/WeatherApp"
+            imageSrc="./images/ProjectImgs/nerdle.png"
+            imageAlt="nerdle"
+            projectTitle="nerdle"
+            projectDesc="wordle but with math equation"
+            projectWebsite="https://nerdle-game.netlify.app/"
+            projectCode="https://github.com/nileshbohra/nerdle-game"
           />
         </div>
         <div className="projectsList">
@@ -63,6 +63,14 @@ export default function Projects() {
         </div>
         <div className="projectsList">
           <ProjectItem
+            imageSrc="./images/ProjectImgs/weatherapp.png"
+            imageAlt="WeatherApp"
+            projectTitle="WeatherApp"
+            projectDesc="WeatherApp shows current Weather"
+            projectWebsite="https://weatherapp-zone.netlify.app/"
+            projectCode="https://github.com/nileshbohra/WeatherApp"
+          />
+          <ProjectItem
             imageSrc="./images/ProjectImgs/dicegame-js.png"
             imageAlt="DiceGame"
             projectTitle="DiceGame"
@@ -76,7 +84,7 @@ export default function Projects() {
             href="https://github.com/nileshbohra?tab=repositories"
             target="_blank"
             className="btn"
-            rel="nofollow"
+            rel="nofollow noopener noreferrer"
           >
             More Projects &nbsp;{">"}
           </a>
