@@ -11,11 +11,15 @@ export default function Socials() {
           <a
             href="https://www.linkedin.com/in/nilesh-bohra-4188a21a1/"
             target="_blank"
-            rel="nofollow"
+            rel="nofollow noopener noreferrer"
           >
             <LinkedInIcon style={{ fontSize: 27 }} />
           </a>
-          <a href="https://github.com/nileshbohra" target="_blank">
+          <a
+            href="https://github.com/nileshbohra"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+          >
             <GitHubIcon style={{ fontSize: 26 }} />
           </a>
         </aside>

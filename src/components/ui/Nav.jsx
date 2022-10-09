@@ -17,7 +17,7 @@ export default function Nav() {
               <NavLink to="/Home">Home</NavLink>
             </li>
             <li>
-              <NavLink to="/Experience">Experience</NavLink>
+              <NavLink to="/Experience">Work Exp</NavLink>
             </li>
             <li>
               <NavLink to="/Skills">Skills</NavLink>

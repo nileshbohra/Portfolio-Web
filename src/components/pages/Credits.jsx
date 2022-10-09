@@ -14,7 +14,7 @@ export default function Credits() {
           <a
             href="https://www.freepik.com/vectors/digital"
             target="_blank"
-            rel="nofollow"
+            rel="nofollow noopener noreferrer"
           >
             Digital vector created by freepik - www.freepik.com
           </a>
