@@ -11,7 +11,7 @@ export default function Home() {
             <span className="nameTxt">I'm</span> Nilesh Bohra
           </h1>
           <h3 className="primaryTxt title">
-            Software Engineer - FullStack Web Development
+            Software Engineer - FullStack Development
           </h3>
           <p className="secondaryTxt">
             I am always ready to learn new skills and technologies. As a full

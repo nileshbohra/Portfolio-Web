@@ -263,6 +263,29 @@ h3.title {
   width: 100%;
 }
 
+/* ------------------------------- skills page ------------------------------ */
+#Skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 100%;
+  overflow: auto;
+  padding: 20px;
+}
+#SkillCard {
+  height: 150px;
+  width: 250px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  margin: 10px;
+}
+.skillCardCointainer {
+  display: flex;
+}
 /* -------------------------- Projects page section ------------------------- */
 #Projects {
   padding: 20px;
@@ -531,6 +554,12 @@ textarea {
     background-color: #1f2e4b;
     height: 100vh;
     width: 100vw;
+  }
+  #SkillCard {
+    margin: 10px;
+  }
+  .skillCardCointainer {
+    flex-direction: column;
   }
   .mobileNav a {
     margin: 20px;
