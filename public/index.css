@@ -14,6 +14,8 @@
   --primary-bg: #27283d;
   --primary-txt: #92f8db;
   --secondary-txt: #9aa2b4;
+  --white: whitesmoke;
+  --offwhite: rgba(245, 245, 245, 0.801);
 }
 
 /* --------------------------------- global --------------------------------- */
@@ -39,7 +41,12 @@ a {
 .secondaryTxt {
   color: var(--secondary-txt);
 }
-
+.white {
+  color: var(--white);
+}
+.offwhite {
+  color: var(--offwhite);
+}
 h1.heading {
   margin-bottom: 30px;
   display: flex;
@@ -263,6 +270,36 @@ h3.title {
   width: 100%;
 }
 
+/* ----------------------------- experience page ---------------------------- */
+#Experience {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.workBoxContainer {
+  width: 50%;
+}
+.workBoxContainer > p {
+  margin: 10px 0;
+}
+.workList {
+  list-style: none;
+  padding: 0px;
+  margin: 30px 0;
+}
+.workList > li {
+  color: var(--secondary-txt);
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+.workList > li::before {
+  content: "▹";
+  position: absolute;
+  left: 0px;
+  color: var(--primary-txt);
+}
+
 /* ------------------------------- skills page ------------------------------ */
 #Skills {
   height: 90vh;
@@ -278,8 +315,8 @@ h3.title {
   align-items: center;
 }
 #SkillCard {
-  height: 150px;
-  width: 250px;
+  height: 120px;
+  width: 220px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -496,6 +533,9 @@ textarea {
   }
   #introduction {
     width: 100%;
+  }
+  .workBoxContainer {
+    width: 80%;
   }
   .heroImage {
     margin-top: 10px;
