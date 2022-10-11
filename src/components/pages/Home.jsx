@@ -25,9 +25,9 @@ export default function Home() {
             >
               GitHub
             </a>
-            .I currently have knowledge of developing web projects using MERN ie
-            Mongodb,Express,React and Node with HTML5, CSS3/SCSS, JavaScript,
-            Ejs, jQuery, Bootstrap.
+            .I currently have knowledge of developing web projects using MERN
+            stack ie Mongodb,Express,React and NodeJs with HTML5, CSS3/SCSS,
+            JavaScript, AngularJs, MySql.
           </p>
           <a
             href="./resume.pdf"
