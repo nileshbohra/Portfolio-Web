@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import logoImg from "../../assets/images/logo.png";
 
 export default function Nav() {
   const [status, setStatus] = useState("close");
@@ -8,7 +9,7 @@ export default function Nav() {
       <header>
         <div className="logo">
           <NavLink to="/Home" activeClassName="none">
-            <img src="./images/NileshBohra.png" alt="" width="65" />
+            <img src={logoImg} alt="" width="65" />
           </NavLink>
         </div>
         <nav id="topNav">

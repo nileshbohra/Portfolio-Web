@@ -14,7 +14,7 @@ export default function WorkBox({
         <span className="white">{title} </span>
         <span className="primaryTxt">
           @{" "}
-          <a href={companyUrl} target="_blank">
+          <a href={companyUrl} target="_blank" rel="noreferrer">
             {company}
           </a>
         </span>

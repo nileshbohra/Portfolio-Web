@@ -16,7 +16,7 @@ export default function Skills() {
           </div>
           <div className="skillCardCointainer">
             <SkillCard imageUrl="https://www.vectorlogo.zone/logos/mysql/mysql-ar21.png" />
-            <SkillCard imageUrl="https://ammarjaved.com/storage/posts/what-is-angularjs.png" />
+            <SkillCard imageUrl="https://www.edureka.co/blog/wp-content/uploads/2017/05/AngularJS-logo-Deep-Dive-into-AngularJS-Edureka.png" />
             <SkillCard imageUrl="https://miro.medium.com/max/1400/1*mtsk3fQ_BRemFidhkel3dA.png" />
             <SkillCard imageUrl="https://images.ctfassets.net/twhs6sq7mv9q/2ygKhYdEDj8QZYr5uBhKaH/886a99a220062bd712cadcdd46997518/sass-logo.jpg" />
           </div>

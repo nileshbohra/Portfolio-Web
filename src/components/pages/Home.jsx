@@ -1,5 +1,7 @@
 import React from "react";
 import Slide from "@material-ui/core/Slide";
+import heroImg from "../../assets/images/heroImage.jpg";
+import resumePdf from "../../assets/resume.pdf";
 
 export default function Home() {
   return (
@@ -30,7 +32,7 @@ export default function Home() {
             JavaScript, AngularJs, MySql.
           </p>
           <a
-            href="./resume.pdf"
+            href={resumePdf}
             target="_blank"
             className="btn btnResume"
             rel="nofollow noopener noreferrer"
@@ -39,7 +41,7 @@ export default function Home() {
           </a>
         </div>
         <div className="heroImage">
-          <img src="./images/heroImage.jpg" alt="heroImage" />
+          <img src={heroImg} alt="heroImage" />
         </div>
       </section>
     </Slide>
