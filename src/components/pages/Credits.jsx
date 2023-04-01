@@ -1,5 +1,6 @@
 import React from "react";
 import Slide from "@material-ui/core/Slide";
+import heroImg from "../../assets/images/heroImage.jpg";
 
 export default function Credits() {
   return (
@@ -8,7 +9,7 @@ export default function Credits() {
         <h1 className="primaryTxt">Image Credits</h1>
         <div className="creditImage">
           <img
-            src="./images/heroImage.jpg"
+            src={heroImg}
             alt="Digital vector created by freepik - www.freepik.com"
           />
           <a

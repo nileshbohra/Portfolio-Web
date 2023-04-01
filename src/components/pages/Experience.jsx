@@ -19,7 +19,7 @@ WebStorm, freebsd.`);
   return (
     <Slide in={true} direction="up" timeout={1000}>
       <section id="Experience">
-        <h1 className="primaryTxt"></h1>
+        <h1 className="primaryTxt heading">Experience</h1>
         <WorkBox
           title="Software Engineer"
           company="Cointab"
