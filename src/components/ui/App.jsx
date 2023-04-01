@@ -4,7 +4,6 @@ import Socials from "./Socials";
 import Hero from "./Hero";
 import Email from "./Email";
 import Slide from "@material-ui/core/Slide";
-import {BrowserRouter as Router} from "react-router-dom";
 import logoImg from "../../assets/images/logo.png";
 
 export default function App() {
@@ -12,12 +11,12 @@ export default function App() {
     return (
         <>
             {Loading ? (
-                <Router>
+                <>
                     <Nav/>
                     <Socials/>
                     <Hero/>
                     <Email/>
-                </Router>
+                </>
             ) : (
                 //splashScreen
                 <Slide in={true} direction="down" timeout={1500}>

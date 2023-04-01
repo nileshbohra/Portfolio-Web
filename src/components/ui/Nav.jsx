@@ -1,117 +1,89 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import React, {useState} from "react";
 import logoImg from "../../assets/images/logo.png";
 
 export default function Nav() {
-  const [status, setStatus] = useState("close");
-  return (
-    <>
-      <header>
-        <div className="logo">
-          <NavLink to="/Home" activeClassName="none">
-            <img src={logoImg} alt="" width="65" />
-          </NavLink>
-        </div>
-        <nav id="topNav">
-          <ul>
-            <li>
-              <NavLink to="/Home">Home</NavLink>
-            </li>
-            <li>
-              <NavLink to="/Experience">Experience</NavLink>
-            </li>
-            <li>
-              <NavLink to="/Skills">Skills</NavLink>
-
-              {/* <a
-                href="https://www.linkedin.com/in/nilesh-bohra-4188a21a1/detail/skills/"
-                target="_blank"
-              >
-                Skills
-              </a> */}
-            </li>
-            <li>
-              <NavLink to="/Projects">Projects</NavLink>
-            </li>
-            <li>
-              <NavLink to="/Contact">Contact</NavLink>
-            </li>
-            {/* <li>
-              <NavLink to="/Credits">Credits</NavLink>
-            </li> */}
-          </ul>
-        </nav>
-        {status === "open" ? (
-          <nav className="mobileNav">
-            <NavLink
-              to="/Home"
-              onClick={() => {
-                setStatus("close");
-              }}
-            >
-              Home
-            </NavLink>
-            <NavLink
-              to="/Experience"
-              onClick={() => {
-                setStatus("close");
-              }}
-            >
-              Experience
-            </NavLink>
-            <NavLink
-              to="/Skills"
-              onClick={() => {
-                setStatus("close");
-              }}
-            >
-              Skills
-            </NavLink>
-            {/* <a
-              href="https://www.linkedin.com/in/nilesh-bohra-4188a21a1/detail/skills/"
-              target="_blank"
-              onClick={() => {
-                setStatus("close");
-              }}
-            >
-              Skills
-            </a> */}
-            <NavLink
-              to="/Projects"
-              onClick={() => {
-                setStatus("close");
-              }}
-            >
-              Projects
-            </NavLink>
-            <NavLink
-              to="/Contact"
-              onClick={() => {
-                setStatus("close");
-              }}
-            >
-              Contact
-            </NavLink>
-            {/* <NavLink
-              to="/Credits"
-              onClick={() => {
-                setStatus("close");
-              }}
-            >
-              Credits
-            </NavLink> */}
-          </nav>
-        ) : null}
-        <div
-          role="button"
-          onClick={() => setStatus(status === "close" ? "open" : "close")}
-          className="hamburgerMenu"
-        >
-          <i className={status}></i>
-          <i className={status}></i>
-          <i className={status}></i>
-        </div>
-      </header>
-    </>
-  );
+    const [status, setStatus] = useState("close");
+    return (
+        <>
+            <header>
+                <div className="logo">
+                    <a href="#Home">
+                        <img src={logoImg} alt="" width="65"/>
+                    </a>
+                </div>
+                <nav id="topNav">
+                    <ul>
+                        <li>
+                            <a href="#Home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#Experience">Experience</a>
+                        </li>
+                        <li>
+                            <a href="#Skills">Skills</a>
+                        </li>
+                        <li>
+                            <a href="#Projects">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#Contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                {status === "open" ? (
+                    <nav className="mobileNav">
+                        <a
+                            href="#Home"
+                            onClick={() => {
+                                setStatus("close");
+                            }}
+                        >
+                            Home
+                        </a>
+                        <a
+                            href="#Experience"
+                            onClick={() => {
+                                setStatus("close");
+                            }}
+                        >
+                            Experience
+                        </a>
+                        <a
+                            href="#Skills"
+                            onClick={() => {
+                                setStatus("close");
+                            }}
+                        >
+                            Skills
+                        </a>
+                        <a
+                            href="#Projects"
+                            onClick={() => {
+                                setStatus("close");
+                            }}
+                        >
+                            Projects
+                        </a>
+                        <a
+                            href="#Contact"
+                            onClick={() => {
+                                setStatus("close");
+                            }}
+                        >
+                            Contact
+                        </a>
+                    </nav>
+                ) : null}
+                <div
+                    role="button"
+                    onClick={() => setStatus(status === "close" ? "open" : "close")}
+                    className="hamburgerMenu"
+                >
+                    <i className={status}></i>
+                    <i className={status}></i>
+                    <i className={status}></i>
+                </div>
+            </header>
+        </>
+    );
 }
