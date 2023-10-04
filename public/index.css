@@ -156,7 +156,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 10vh;
+    height: 12vh;
     padding: 1.2% 2%;
     position: -webkit-sticky;
     position: sticky;
@@ -242,7 +242,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
 }
 
@@ -293,7 +293,7 @@ h3.title {
 #Experience {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     padding: 100px 20px 20px 20px;
 }
@@ -335,7 +335,7 @@ h3.title {
 #Skills {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     padding: 100px 20px 20px 20px;
 }
@@ -343,7 +343,7 @@ h3.title {
 .skillContainer {
     width: 100%;
     margin: auto;
-    overflow: auto;
+    /* overflow: auto; */
 }
 
 #SkillCard {
@@ -359,13 +359,13 @@ h3.title {
 /* -------------------------- Projects page section ------------------------- */
 #Projects {
     padding: 100px 20px 20px 20px;
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
 }
 
 .projectsListContainer {
     height: 90%;
-    overflow: auto;
+    /* overflow: auto; */
 }
 
 .projectsList {
@@ -446,7 +446,7 @@ h3.title {
     display: flex;
     flex-direction: column;
     padding: 100px 20px 20px 20px;
-    height: 95vh;
+    /* height: 95vh; */
     width: 100%;
 }
 
@@ -528,10 +528,10 @@ textarea {
 
 /* -------------------------- Credits Page section -------------------------- */
 #Credits {
-    height: 90vh;
+    /* height: 90vh; */
     width: 80%;
     line-height: 2;
-    overflow: auto;
+    /* overflow: auto; */
 }
 
 .creditImage {
