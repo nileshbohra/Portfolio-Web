@@ -1,7 +1,7 @@
 import React from "react";
 import Slide from "@material-ui/core/Slide";
 import heroImg from "../../assets/images/heroImage.jpg";
-import resumePdf from "../../assets/resume.pdf";
+import resumePdf from "../../assets/resume2.pdf";
 
 export default function Home() {
     return (

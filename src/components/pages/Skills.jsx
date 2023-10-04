@@ -43,7 +43,7 @@ export default function Skills() {
                             <SkillCard imageUrl="https://www.techfor.id/wp-content/uploads/2019/12/html.png"/>
                         </Grid>
                         <Grid item>
-                            <SkillCard imageUrl="https://armyyazilim.com/wp-content/uploads/2019/10/css.png"/>
+                            <SkillCard imageUrl="https://colorlib.com/wp/wp-content/uploads/sites/2/creative-css3-tutorials.jpg"/>
                         </Grid>
                         <Grid item>
                             <SkillCard

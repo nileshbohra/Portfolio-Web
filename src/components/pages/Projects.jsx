@@ -14,7 +14,7 @@ export default function Projects() {
     return (
         <Slide in={true} direction="up" timeout={1000}>
             <section id="Projects">
-                <h1 className="primaryTxt heading">Projects</h1>
+                <h1 className="primaryTxt heading">Personal Projects</h1>
                 <div className="projectsListContainer">
                     <div className="projectsList">
                         <ProjectItem
