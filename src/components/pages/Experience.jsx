@@ -17,27 +17,30 @@ store them in SFTP servers.`);
   workArray.push(`Tech Stack: AngularJs, NodeJs, Express, MySql, Sequelize,
 WebStorm, freebsd.`);
 
-let workArray2 = [];
+  let workArray2 = [];
   return (
     <Slide in={true} direction="up" timeout={1000}>
       <section id="Experience">
         <h1 className="primaryTxt heading">Experience</h1>
-        <WorkBox
-          title="SDE - II"
-          company="Cointab"
-          companyUrl="https://www.cointab.in/"
-          fromDate="May 2023"
-          toDate="present"
-          workArray={workArray2}
-        />
-        <WorkBox
-          title="SDE - I"
-          company="Cointab"
-          companyUrl="https://www.cointab.in/"
-          fromDate="June 2022"
-          toDate="May 2023"
-          workArray={workArray}
-        />
+        <div className="workBoxContainer">
+          <WorkBox
+            title="SDE - II"
+            company="Cointab"
+            companyUrl="https://www.cointab.in/"
+            fromDate="May 2023"
+            toDate="present"
+            workArray={workArray2}
+            current={true}
+          />
+          <WorkBox
+            title="SDE - I"
+            company="Cointab"
+            companyUrl="https://www.cointab.in/"
+            fromDate="June 2022"
+            toDate="May 2023"
+            workArray={workArray}
+          />
+        </div>
       </section>
     </Slide>
   );
