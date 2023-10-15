@@ -42,7 +42,7 @@ export default function Home() {
                         </a>
                     </div>
                     <div className="heroImage">
-                        <img src={heroImg} alt="heroImage"/>
+                        <img src={heroImg} alt="heroImage" loading="lazy"/>
                     </div>
                 </section>
             </Slide>

@@ -10,6 +10,7 @@ export default function ProjectItem(props) {
             <div className="projectImage">
                 <img
                     className="projectImgs"
+                    loading="lazy"
                     src={props.imageSrc}
                     alt={props.imageAlt}
                 />
