@@ -7,15 +7,15 @@ export default function Experience() {
   workArray.push(`Worked on reconciliation software, added major features and solved
 various bugs which massively increased the performance and UX of
 our data analyst team.`);
-  workArray.push(`Worked on Infrastructure management system application to
-maintain company's core recon applications deployed across
-freebsd droplets on digitalocean.`);
-  workArray.push(`Added Features like Monitoring DISK Capacity, RAM Consumption,
-Bandwidth Consumption etc by individual applications.`);
-  workArray.push(`Used Selenium to scrape data from Various merchant websites and
-store them in SFTP servers.`);
+  workArray.push(`Built a infrastructure management system application to
+maintain company's core projects deployed across
+freebsd droplets on digitalocean. Which reduced maintenance overhead.`);
+  workArray.push(`Integrated new features in infra management app like Disk Monitoring, Memory Consumption,
+Bandwidth Consumption etc by individual applications for easy monitoring and maintenance.`);
+  workArray.push(`Built Selenium Scrapers to scrape data from various merchant websites and
+store them in SFTP servers, Which reduced manual work of data analyst team.`);
   workArray.push(`Tech Stack: AngularJs, NodeJs, Express, MySql, Sequelize,
-WebStorm, freebsd.`);
+WebStorm, freebsd, unix, linux.`);
 
   let workArray2 = [];
   return (
