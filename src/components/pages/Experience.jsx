@@ -18,6 +18,18 @@ store them in SFTP servers, Which reduced manual work of data analyst team.`);
 WebStorm, freebsd, unix, linux.`);
 
   let workArray2 = [];
+  workArray2.push(`Maintained Hosted client servers on DigitalOcean and
+also developed automation for infra management via
+CSM (Cointab Systems Management).`);
+  workArray2.push(`Developed a file transfer system between nodejs and
+java using socket programming which reduced infra
+cost by 20%.`);
+  workArray2.push(`Mentored and guided junior developers, contributing
+to their professional development within the
+organization.`);
+  workArray2.push(`Automated Manual Data Reterival by integrating
+HDFC Bank And Atom PG Api's into the system.`);
+
   return (
     <Slide in={true} direction="up" timeout={1000}>
       <section id="Experience">
